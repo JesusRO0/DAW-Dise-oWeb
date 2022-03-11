@@ -1,0 +1,101 @@
+html{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: darkseagreen;
+}
+
+#chess{
+    display: block;
+    width: 65%;
+    margin-left: 17%;
+    border: 5px darkgreen solid;
+}
+
+header{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    font-family: 'Domine', serif;
+    font-size: 1vw;
+    color: darkslategray;
+
+}
+#titulo{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: -20%;
+    color: darkslategray;
+    font-family: 'Fredoka One', cursive;
+    font-size: 8vw;
+}
+
+#segundobloque{
+    border: 2px white solid;
+    border-radius: 1%;
+    
+}
+#history{
+    background-color: white;
+    padding-left: 1%;
+    font-family: 'Fredoka One', cursive;
+    color: darkslategray;
+    font-size: 1.5vw;
+}
+#tercerbloque{
+    background-color: seagreen;
+    margin:1%;
+    color: white;
+}
+#tercerbloque p{
+    margin-top: 4%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#tercerbloque p::first-letter{
+    font-size: 1.5em;
+    color:rgb(85, 52, 9);
+}
+#rules{
+    background-color: white;
+    padding-left: 1%;
+    font-family: 'Fredoka One', cursive;
+    color: darkslategray;
+    font-size: 1.5vw;
+}
+#cuartobloque{
+    background-color: green;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#lista{
+    background-color: darkgrey;
+    margin: 5%;
+    border: 10px grey solid;
+}
+#cuartobloque p{
+    margin-top: 4%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+footer{
+    background-color: grey;
+    text-align: center;
+    padding: 2%;
+    margin-top: 2%;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+}
+a{
+    text-decoration: none;
+    color: darkseagreen;
+}
+a:hover{
+    font-size: 1.2em;
+    color:yellowgreen
+}

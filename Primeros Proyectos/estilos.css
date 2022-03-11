@@ -1,0 +1,353 @@
+/*Estilos Css*/
+/*
+.segundoparraforadial{
+    background: radial-gradient(circle at top right, #363456 0%,#9373a1 50%, #59A987, 100%);
+}*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --colorprincipal:#9373a1;
+    --colorsecundario:#35a52f;
+}
+
+html{
+    background-color: var(--colorprincipal);
+    /*background: linear-gradient(to bottom,#9373a1 0%, #58276d 100%);*/
+}
+
+p{
+    font-size: 1.4em;
+    padding: 20px;
+    margin: 10px;
+}
+
+strong{
+    font-size: 1.7em;
+    text-shadow: 2px 2px 0px red, 2px -2px 0px red, -2px -2px 0px red, -2px 2px 0px red;
+}
+
+.seccion1{
+    font-weight: bold;
+}
+
+#findetextoradial{
+    color: orange;
+}
+
+span{
+    font-style: italic;
+}
+
+mark{
+    background-color: var(--colorsecundario);
+}
+
+abbr{
+    text-decoration: none;
+}
+
+figcaption{
+    color:rosybrown;
+}
+
+ul{
+    list-style-type:circle;
+    list-style-position: inside;
+    list-style-image: url('./icon.png');
+}
+
+ol li{
+    color: green;
+    font-weight: bold;
+    list-style-type:upper-roman;
+}
+
+section p~p{
+    background-color: paleturquoise;
+}
+
+.primerparrafo span{
+    background-color: purple;
+}
+
+th[colspan="2"],th[colspan="4"]{
+    background-color: royalblue;
+}
+
+blockquote~blockquote{
+    background-color: salmon;
+}
+
+blockquote{
+    background-color: sandybrown;
+}
+
+p>em{
+    background-color: steelblue;
+}
+
+body>p,nav>p{
+    background-color: thistle;
+}
+
+nav * li:nth-child(odd){
+    font-family: monospace;
+}
+
+nav * li:nth-child(even){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section p:first-child{
+    color:red;
+}
+
+section p:last-child{
+    color:yellow;
+}
+
+h2:first-of-type{
+    font-size: 3em;
+}
+
+section :not(p) :not(span){
+    font-size: 2em;
+}
+
+nav a:hover{
+    font-size: 2em;
+}
+section p:active{
+    background-color: yellow;
+}
+
+a:link{
+    color: violet;
+    text-decoration: none;
+    background-color:tomato;
+}
+
+h1{
+    font-family: 'Broadway';
+    font-size: 1.6em;
+
+    background-color: cadetblue;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: crimson;
+    border-left-color:chartreuse;
+    border-right-color:darkblue;
+    border-top-color:darkgoldenrod;
+    border-bottom-color:darkorchid;
+    border-top-width: 20px;
+    border-bottom-width: 15px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-left-style: double;
+    border-right-style: inset;
+    border-top-style: ridge;
+    border-bottom-style: bold;
+
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+
+    
+}
+
+a:visited{
+    color: yellow;
+    text-decoration: none;
+    background-color: turquoise;
+}
+/*
+h1::first-letter{
+    color:brown;
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+*/
+.primeralinea::first-line{
+    color:darkcyan;
+}
+
+::selection{
+    color:darkred;
+    background-color: darkseagreen;
+}
+
+.cita::before{
+    content: "-----";
+    color:deeppink;
+    font-weight: bold;
+    font-size: 3em;
+    width: 100px;
+    display: inline-block;
+}
+
+.cita::after{
+    content: ".....";
+    color:gold;
+    font-weight: bold;
+    font-size: 3em;
+    width: 100px;
+    display: inline-block;
+}
+
+#findetexto{
+    font-size: 2vw;
+    width: 100%;
+    text-align: center;
+}
+
+.deluxe{
+    background-color: transparent;
+    color: black;
+
+    font-family:'Raleway', sans-serif;
+    font-size: 1.5em;
+    line-height: 2em;
+
+    letter-spacing: 3pt;
+    text-align: justify;
+
+    box-shadow: 10px 10px 5px powderblue;
+    width: 80%;
+
+    background: linear-gradient(-45deg,red 50%,yellow 60%,purple 80%,green 90%,blue 100%);
+}
+
+.deluxe span{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6em;
+    color: burlywood;
+    font-weight: 700;
+    font-style: normal;
+    font-variant:small-caps;
+
+    text-shadow: 0px 0px 5px blue;
+}
+
+@font-face {
+    font-family: 'Broadway';
+    src: url('./data/broadway-font/BroadwayRegular-7Bpow.ttf') format('truetype');
+}
+
+nav{
+    border: solid 5px blue;
+    border-bottom: dotted 20px red;
+}
+
+mark{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 10px -10px 5px powderblue, -10px 10px 5px powderblue;
+}
+
+.radial{
+    background: radial-gradient(circle at top right, #363456 0%,#9373a1 50%, #59A987 100%);
+    background: radial-gradient(circle, #363456 0%,#9373a1 50%, #59A987 100%);
+    background: radial-gradient(circle at bottom left, #363456 0%,#9373a1 50%, #59A987 100%);
+}
+
+#imagen:hover{
+    filter: grayscale(100%);
+}
+/*Filtros*/
+#salon:hover{
+    /*filter: blur(5px) grayscale(50%);
+    filter: invert(100%);
+    filter: hue-rotate(200deg);
+    filter:sepia(50%);
+    filter:brightness(50%);
+    filter: contrast(150%);
+    filter:saturate(250%);*/
+    filter:opacity(20%) drop-shadow(10px 10px red);
+}
+/*Tranformaciones*/
+.mario{
+    border: brown 3px solid;
+
+    /*Transiciones*/
+    transition-property: transform; /*A que propiedades le afecta*/
+    transition-duration:5s; /*Tiempo de la transicion*/
+    transition-delay: 1s; /*Cuando va a esperar en hacerla*/
+    transition-timing-function: ease-in-out; /*ease: Lento,rapido,lento; lineal: lento siempre; ease-in: Lento y luego rapido; ease-in: rapido y luego lento; ease-in-out: lento normal lento*/
+}
+
+.mario:hover{
+    /*transform: scalex(1.5) scaley(0.75);/*scale()Tamaño de la imagen, scalex o y(según el eje X e Y)*/
+    /*transform: translate(100px,-300px); /*Mover elemnto sobre la pantalla, valor X(vertical) e Y(horizontal)*/
+    /*transform: scale3d(1,1,2); /*Tridimensional Eje X Y Z(Profundidad)*/
+    /*transform: skewx(0deg) skewy(40deg); /*Torcer Eje X e Y*/
+    /*transform: rotateZ(90deg); /*Rotacon sobre X o Y e Z(plano rotativo)*/
+    /*transform-origin: bottom center;*/
+    
+    /*Transiciones*/
+
+    transform: translateX(500px);
+}
+
+.degradado{
+    background: linear-gradient(90deg, rgba(60,10,200,1) 25%,rgba(125,200,10,0) 75%, rgba(200,50,0,0.3) 100%);
+    transform:  scale(0.8);
+    transition: transform 2s linear 0s, filter 10s 2s; /*Si cambiamos transform se hara solo a la transicion y con all a todo. Propiedad ShortHand*/
+    /*Primero se hace la transicion y luego se aplica el filtro*/
+
+    
+}
+
+.degradado:hover{
+    background: linear-gradient(90deg, rgba(60,10,200,1) 25%,rgba(125,200,10,0) 75%, rgba(200,50,0,0.3) 100%);
+    transform:  scale(1);
+    filter:opacity(50%);
+}
+
+/*Animaciones*/
+#animar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    border: 10px solid blue;
+    text-align: center;
+    color:cornsilk;
+    background: black;
+    animation-name: mianimacion;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+
+
+
+    /*animation:mianimacion 10s 0s infinite alternate linear forwards;*/
+}
+
+@keyframes mianimacion{
+
+    20%{
+         background-color: burlywood;
+    }
+    40%{
+        background-color:cornflowerblue;
+    }
+    60%{
+        background-color:darkgoldenrod;
+        transform: rotatex(180deg);
+    }
+    80%{
+        background-color:darkgreen;
+        font-size: 3em;
+    }
+    100%{
+        background-color:darkslateblue;
+    }
+}

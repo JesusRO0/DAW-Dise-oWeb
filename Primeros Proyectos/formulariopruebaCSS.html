@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="descripcion" content="Mi primer formulario HTML con diferentes tipos de entrada">
+        <meta name="author" content="Jesús Roca">
+        <meta name="keywords" content="html, HTML, diw, desarrollo de aplicaciones, desarrollo de aplicaciones web, formularios, html5, diseño de interfaces">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="lang" content="es-ES">
+        <link rel="stylesheet" href="./FormulariopruebaCSS.css">
+        <title>Formulario de mi página web</title>
+    </head>
+    <body>
+        <main name="contenido">
+            <form name="miformulario" method="post" action="form.php">
+                <h1>Introduzca datos</h1>
+                <fieldset id="personales">
+                    <legend>Datos personales</legend>
+                    <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" size="15" maxlength="10" required placeholder="Obligatorio">
+                    </p>
+                    <p>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" name="apellido" id="apellido" size="40" maxlength="40" required placeholder="Obligatorio">
+                    </p>
+                <fieldset class="clasColor">
+                    <legend>Edad</legend>
+                    <p id="colorEdad">
+                        <input type="radio" name="edad" id="A1625" value="A1625">
+                        <label for="edad">16 a 25</label>
+                        <input type="radio" name="edad" id="B2635" value="B2635">
+                        <label for="edad">26 a 35</label>
+                        <input type="radio" name="edad" id="C3645" value="C3645">
+                        <label for="edad">36 a 45</laber>
+                        <input type="radio" name="edad" id="D4655" value="D4655">
+                        <label for="edad">46 a 55</laber>
+                        <input type="radio" name="edad" id="EM55" value="EM55">
+                        <label for="edad">Mayor que 55</laber>
+                        <input type="radio" name="edad" id="FNSNC" value="FNSNC" checked>
+                        <label for="edad">NS/NC</laber>
+                    </p>
+                </fieldset>
+                <p>
+                <fieldset class="intereses">
+                    <legend>Intereses:</legend>
+                        <p>
+                            <label for="interes">Arte y Literatura</label>
+                            <input type="checkbox" name="arte" id="arte" value="d">
+                        </p>
+                        <p>
+                            <label for="interes">Ciencia y Tecnología</label>
+                            <input type="checkbox" name="ciencia" id="ciencia" value="c" >
+                        </p>
+                        <p>
+                            <label for="interes">Política y Sociedad</label>
+                            <input type="checkbox" name="politica" id="politica" value="l">
+                        </p>
+                        <p>
+                            <label for="interes">Ocio y Deporte</label>
+                            <input type="checkbox" name="ocio" id="ocio" value="v" checked>
+                        </p>
+                        <p>
+                            <label for="interes">Cine y Televisión</label>
+                            <input type="checkbox" name="cine" id="cine" value="x" >
+                        </p>
+                </fieldset>
+                </p>
+                <p>
+                    <label for="postal">Código Postal:</label>
+                    <input type="text" name="postal" id="postal" size="5" pattern="[0-9]{5}">
+                </p>
+                </fieldset>
+                <fieldset id="otros">
+                    <legend>Otros datos</legend>
+                    <h3>Color Favorito</h3>
+                    <p id="colorFavorito">
+                        
+                        <input type="radio" name="color" id="fav1" value="A" checked>
+                        <label for="color">Rojo</laber>
+                        <input type="radio" name="color" id="fav2" value="B">
+                        <label for="color">Azul</laber>
+                        <input type="radio" name="color" id="fav3" value="C">
+                        <label for="color">Amarillo</laber>
+                        <input type="radio" name="color" id="fav4" value="D">
+                        <label for="color">Verde</laber>
+                    </p>
+                    <h3>Asignaturas favoritas</h3>
+                    <p id="asignaturas">
+                        <p>
+                            <label for="asignatura">DWES</label>
+                            <input type="checkbox" name="DWES" id="DWES" value="d">
+                        </p>
+                        <p>
+                            <label for="asignatura">DWEC</label>
+                            <input type="checkbox" name="DWEC" id="DWEC" value="c" >
+                        </p>
+                        <p>
+                            <label for="asignatura">DAW</label>
+                            <input type="checkbox" name="DAW" id="DAW" value="l">
+                        </p>
+                        <p>
+                            <label for="asignatura">DIW</label>
+                            <input type="checkbox" name="DIW" id="DIW" value="v" checked>
+                        </p>
+                        <p>
+                            <label for="asignatura">EIEM</label>
+                            <input type="checkbox" name="EIEM" id="EIEM" value="v" >
+                        </p>
+                    </p>
+                        <h3>Probalidad de aprobar</h3>
+                    <p>
+                        <label for="numfav">Porcentaje:</label>
+                        <input type="number" name="numfav" id="numfav" size="5" min="0" max="100" step="5" value="50">
+                    </p>
+                </fieldset>
+                <p id="boton">
+                    <input id="enviar" type="submit" value="Enviar formulario">
+                    <input id="reset" type="reset" value="Reiniciar formulario">
+                </p>
+            </form>
+        </main>
+    </body>
+</html>

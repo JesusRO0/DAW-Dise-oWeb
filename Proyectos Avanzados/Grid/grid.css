@@ -1,0 +1,94 @@
+/*CSS Grid*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkcyan;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.container {
+    display: grid;
+    text-align: center;
+    border: 1px solid darkslateblue;
+    width: 80vw;
+    height: 30vh;
+    margin-top: 30px;
+    grid-template-areas: "a1 a1 a2 a3 a4" "a5 a6 a6 a6 a6" "a12 a12 a7 a9 a9" "a12 a12 a8 a10 a11";
+    margin: 50px auto;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c7,
+.c8,
+.c9,
+.c10,
+.c11,
+.c12 {
+    border: 5px solid darkslateblue;
+    padding-top: 20px;
+    /*grid-template-columns: 30%, 40% 30%, 10%;*/
+    background-color: pink;
+}
+
+.c1 {
+    grid-area: a1;
+    background-color: palevioletred;
+}
+
+.c2 {
+    grid-area: a2;
+}
+
+.c3 {
+    grid-area: a3;
+}
+
+.c4 {
+    grid-area: a4;
+}
+
+.c5 {
+    grid-area: a5;
+}
+
+.c6 {
+    grid-area: a6;
+    background-color: palevioletred;
+}
+
+.c7 {
+    grid-area: a7;
+}
+
+.c8 {
+    grid-area: a8;
+}
+
+.c9 {
+    grid-area: a9;
+    background-color: palevioletred;
+}
+
+.c10 {
+    grid-area: a10;
+}
+
+.c11 {
+    grid-area: a11;
+}
+
+.c12 {
+    grid-area: a12;
+    background-color: palevioletred;
+}

@@ -1,0 +1,211 @@
+/*CSS Patrimonio de la Humanidad*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Letra:
+
+    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    */
+}
+body{
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Propiedades de los enlaces*/
+a{
+    transition: all 1s linear;
+    text-decoration: none;
+}
+/*Propiedad del enlace del título Principal*/
+.tituloPrincipal a{
+    text-decoration: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+/*Propiedades de la imagen de los monumentos*/
+.imagen img{
+    transition: all 1s linear;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+/*Propiedades del Logo del título*/
+.tituloPrincipal img{
+    width: 10%;
+    padding-right: 20px;
+}
+/*Contenedor de los títulos*/
+.tituloPrincipal{
+    margin: 10px;
+    margin-left: 135px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 2.2em;
+    font-family: 'Kodchasan', sans-serif;
+    color: #D69D36;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.8em;
+    font-family: 'Kodchasan', sans-serif;
+    text-align: left;
+    color: #1C4885;
+    padding-bottom: 25px;
+}
+/*Contenedor Global*/
+.contenedor {
+    max-width: 1500px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    /* Funciona tambien con:
+    grid-template-columns: repeat(auto-fit,minmax(150px, 220px));*/
+}
+/*Cada celda con su imagen*/
+.celdas{
+    transition: all 0.5s linear;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    display: grid;
+    background-color: #D69D36;
+}
+/*Contendor de los bloques que tienen texto*/
+.info{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 40px;
+    line-height: 35px;
+}
+/*Un margen del primer parrafo de texto*/
+.c1 .parrafo{
+    margin-bottom: 20px;
+}
+/*Propiedades de los textos*/
+.parrafo{
+    font-family: 'Maitree', serif;
+    text-align: justify;
+}
+/*Propiedades de las listas*/
+li{
+    font-family: 'Maitree', serif;
+    list-style-type: square;
+    font-weight: bolder;
+    margin-left: 16px;
+    text-align: justify;
+}
+ul{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*Boton de los bloques de solo texto*/
+.boton{
+    transition: all 1s linear;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    height: 40px;
+    color: #FF9900;
+    background-color: #1C4885;
+    border: 2px solid black;
+}
+.boton a{
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FF9900;
+}
+/*Boton de las imagenes con su animación*/
+.botonMagico{
+    transition: all 1s linear;
+    margin: 0 auto;
+    position: absolute;
+    left: 10%;
+    bottom:90%;
+    opacity: 0%;
+    width: 80%;
+    background-color: #D69D36;
+    border: 2px solid #1C4885;
+}
+/*Enlace del boton de las imagenes*/
+.enlaceImagen a{
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: bold;
+    color: #1C4885;
+    font-size: 1.3em;
+}
+footer{
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: bold;
+    display: grid;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+    color:#D69D36;
+}
+/*Propiedades de GRID*/
+.c1{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.c2{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.c4{
+    grid-column: 6;
+}
+.c5{
+    grid-row: span 2;
+}
+.c6{
+    grid-row: span 2;
+}
+.c7{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.c8{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.c9{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.c10{
+    grid-row: span 2;
+}
+.c11{
+    grid-row: span 2;
+}
+.c14{
+    grid-column: span 2;
+}
+/*Animaciones*/
+.celdas:hover .botonMagico{
+    transition: all 1s linear;
+    bottom:45%;
+    opacity: 70%;
+}
+.celdas:hover .imagen img{
+    transition: all 1s linear;
+    filter: grayscale(0%);
+}
+.boton:hover{
+    transition: all 1s linear;
+    background-color: black;
+    border: 2px solid #1C4885;
+}
+.boton:hover a{
+    transition: all 1s linear;
+    color: white;
+}

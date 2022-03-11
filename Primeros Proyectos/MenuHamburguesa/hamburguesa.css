@@ -1,0 +1,148 @@
+/*CSS Menú Hamburguesa*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*Fuente: 
+    font-family: 'Exo', sans-serif;
+    font-family: 'Lacquer', cursive;
+    */
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    background-image: url(../img/burger.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    position: relative;
+}
+
+input{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 60px;
+    height: 50px;
+    opacity: 0%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+/*Contenedor de las lineas*/
+.lineas{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 60px;
+    height: 60px;
+    z-index: 15;
+}
+
+/*Propiedades de todas las líneas*/
+.linea1,.linea2,.linea3{
+    position: relative;
+    background-color: orange;
+    border-radius: 5px;
+    width: 45px;
+    height: 5px;
+    transition: all 0.3s linear;
+}
+
+/*Espacio entre ellas*/
+.linea1,.linea2{
+    margin-bottom: 11px;
+}
+/*Transiciones*/
+input[type="checkbox"]:checked ~ div .linea2{
+    transform-origin: 0;
+    width: 0px;
+    opacity: 0;
+    background-color: green;
+    transition: all 0.3s linear;
+}
+
+input[type="checkbox"]:checked ~ div .linea1{
+    transform-origin: 0;
+    background-color: green;
+    transform: rotateZ(45deg);
+    transition: all 0.3s linear;
+}
+
+input[type="checkbox"]:checked ~ div .linea3{
+    transform-origin: 0;
+    background-color: green;
+    transform: rotateZ(-45deg);
+    transition: all 0.3s linear;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    position: absolute;
+    left: 0%;
+    transition: all 0.5s linear;
+}
+
+/*Listas*/
+li{
+    list-style: none;
+}
+
+/*Propiedades del nav*/
+nav{
+    background-color: rgb(149, 240, 149);
+    padding: 30px;
+    width: 350px;
+    position: absolute;
+    height:100vh;
+    top: 0;
+    left: -20%;
+    transition: all 0.5s linear;
+}
+
+/*Propiedades de las listas*/
+.navegador li{
+    margin: 20px;
+    font-size: 1.8em;
+    position: relative;
+    top: 70px;
+}
+
+/*Enlaces*/
+a{
+    text-decoration:none;
+    color: black;
+}
+a:hover{
+    transition: transform, 0.2s ease;
+    font-weight: bold;
+    color:green;
+    text-decoration: underline green;
+}
+
+/*Propiedades del texto*/
+h1{
+    font-family: 'Lacquer', cursive;
+    color: white;
+    margin-right: 50px;
+    font-size: 4em;
+    left: 650px;
+    top: 150px;
+    position:absolute;
+    z-index: 10;
+}
+
+p{
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.815);
+    line-height: 45px;
+    font-size: 1.5em;
+    padding:15px;
+    margin: 15px;
+    margin-right: 80px;
+    margin-left: 600px;
+    top: 300px;
+    position: absolute;
+    z-index: 10;
+}
+
+

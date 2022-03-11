@@ -1,0 +1,206 @@
+/*CSS Dados*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: honeydew;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+h1{
+    font-weight: bold;
+    margin-top:5px;
+    margin-bottom: 26px;
+    text-align: center;
+    color: white;
+}
+
+/*Propiedades del contenedor del título y hr*/
+.titulo{
+    font-size: 1.2em;
+    margin: 6px;
+    display: flex;
+    flex-direction:wrap;
+    justify-content:center;
+}
+hr{
+    display: flex;
+    flex-direction:wrap;
+    justify-content:center;
+    color:white;
+    border: 2px solid whitesmoke;
+    width: 550px;
+    font-weight: bold;
+}
+
+/*Propiedades del contenedor que contiene todo*/
+.contenedorPrincipal{
+    display: flex;
+    flex-flow: wrap;
+    justify-content:center;
+    align-items:center;
+    padding: 5px;
+    margin: 30px;
+    max-width: 750px;
+    /*height: 220px;*/
+    border: 4px solid darkslategrey;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+/*Contenedor de los dados*/
+.contenedorDados{
+    margin: 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items:flex-end;
+    align-content: flex-end;
+}
+
+/*Colores de los dados*/
+.dado1{
+    background-color: maroon;
+}
+.dado2{
+    background-color: chocolate;
+}
+.dado3{
+    background-color: darkorange;
+}
+.dado4{
+    background-color: darkgreen;
+}
+.dado5{
+    background-color: navy;
+}
+.dado6{
+    background-color: indigo;
+}
+
+/*Propiedades de los dados*/
+.dado1,.dado2,.dado3,.dado4,.dado5,.dado6{
+    display: flex;
+    flex-flow: wrap;
+    margin:2px;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    width: 100px;
+    height: 100px;
+}
+
+/*Propiedades de los puntos del dado*/
+p{
+    margin:5px;
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+/*Propiedades del dado 1*/
+.dado1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.dado1punto1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Propiedades del dado 2*/
+.dado2{
+    display: flex;
+    justify-content: space-between;
+}
+.dado2punto1{
+    display: flex;
+    flex-flow:row;
+}
+.dado2punto2{
+    display: flex;
+    flex-flow: row-reverse;
+    align-self: flex-end;
+}
+
+/*Propiedades del dado 3*/
+.dado3{    
+    display: flex;
+    justify-content: space-between;
+}
+.dado3punto1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dado3punto2{
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+}
+.dado3punto3{
+    display: flex;
+    flex-flow: column;
+    align-self: flex-end;
+}
+
+/*Propiedades del dado 4*/
+.dado4{
+    display: flex;
+    justify-content: space-between;
+}
+.dado4punto1y2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dado4punto3y4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Propiedades del dado 5*/
+.dado5{
+    display: flex;
+    justify-content: space-between;
+}
+.dado5punto1y2{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.dado5punto3{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+.dado5punto4y5{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+/*Propiedades del dado 6*/
+.dado6{
+    display: flex;
+    justify-content: space-between;
+}
+.dado6punto12y3{
+    display: flex;
+    flex-flow: column;   
+    justify-content: space-between;
+}
+.dado6punto45y6{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}

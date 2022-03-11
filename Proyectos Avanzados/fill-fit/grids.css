@@ -1,0 +1,94 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-color:plum;
+    font-family: 'Barlow','sans-serif';
+    
+}
+
+h1{
+    
+    font-size: 2.5em;
+    text-align: center;
+    padding:30px;
+    color:rebeccapurple;
+    text-decoration: underline;}
+h2{
+    font-size: 2em;
+    text-align: left;
+    padding:30px;
+    color:rebeccapurple;
+}
+.container, .container2,.container3,.container4{
+    display: grid;
+    grid-gap: 10px;
+    width:80vw;
+    background-color: rebeccapurple;
+    margin:10px auto;
+    border: 10px solid rebeccapurple;
+    justify-content: center;
+    align-content: center;
+  }
+  .caja{
+    background-color: khaki;
+  }
+
+
+
+
+  .container, .container2{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+   
+  }
+ .container3,.container4{
+    
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,1fr);
+  }
+
+
+  .container{
+    grid-auto-flow:row;
+  }
+  .container2{
+    grid-auto-flow:row dense;
+  }
+  .container3{
+    grid-auto-flow:column;
+  }
+  .container4{
+    grid-auto-flow:column dense;
+  }
+
+  .caja {
+   
+    text-align: center;
+    padding: 25px;
+    font-size: 3em;
+    color:rebeccapurple;
+
+  }
+
+ 
+
+
+
+
+  .c1,.c3,.c4,.c9 {
+    grid-row-end: span 2;
+    background-color: palevioletred;
+  }
+  .c2,.c5{
+    grid-column-end: span 2;
+    background-color: lightsalmon;
+  }
+
+

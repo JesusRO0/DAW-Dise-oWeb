@@ -1,0 +1,75 @@
+/*CSS FlexBox*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    margin: 30px;
+    width: 900px;
+    height: 900px;
+    border: 4px solid black;
+
+    /*Lo nuevo*/
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap:wrap-reverse;*/
+    flex-flow: column;
+    align-content:flex-end;
+    align-items: flex-end;
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedorCaja{
+    display: flex;
+    flex-flow:row nowrap;
+
+}
+.contenedorCaja2{
+    display: flex;
+    flex-flow:row nowrap;
+}
+
+.caja{
+    margin:10px;
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+
+    /*Redimension*/
+    /*order:5;*/
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
+    /*flex-basis: content;*/
+}
+.caja4{
+    margin:10px;
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+    /*Redimension*/
+    /*order:5;*/
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
+    /*flex-basis: content;*/
+}
+
+.caja3{
+    margin:10px;
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+}
+/*#caja7{
+    background-color: lightgreen;
+    order:3;
+    /*Adapta el tamaño, si ponemos mucho lo demás se achica o se ensancha si es al revés*/
+    /*flex-grow: 4;*/
+    /*flex-shrink: 1.2;*/
+    /*align-self: flex-start;*/
+    /**/

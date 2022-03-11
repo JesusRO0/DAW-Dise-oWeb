@@ -1,0 +1,546 @@
+/*CSS Tarjetas*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*Letra
+
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Raleway', sans-serif;
+    */
+}
+/*Cabecera que contiene el título principal*/
+header {
+    margin-top: -10px;
+    background-color:rgba(0, 0, 0, 0.781);
+    width: 92vw;
+}
+/*Propiedades del body y el tocho del fondo*/
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1000' height='1000' preserveAspectRatio='none' viewBox='0 0 1000 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1105%26quot%3b)' fill='none'%3e%3crect width='1000' height='1000' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cuse xlink:href='%23SvgjsSymbol1112' x='0' y='0'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsSymbol1112' x='0' y='720'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsSymbol1112' x='720' y='0'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsSymbol1112' x='720' y='720'%3e%3c/use%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1105'%3e%3crect width='1000' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpath d='M-1 0 a1 1 0 1 0 2 0 a1 1 0 1 0 -2 0z' id='SvgjsPath1106'%3e%3c/path%3e%3cpath d='M-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0z' id='SvgjsPath1110'%3e%3c/path%3e%3cpath d='M-5 0 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0z' id='SvgjsPath1107'%3e%3c/path%3e%3cpath d='M2 -2 L-2 2z' id='SvgjsPath1111'%3e%3c/path%3e%3cpath d='M6 -6 L-6 6z' id='SvgjsPath1109'%3e%3c/path%3e%3cpath d='M30 -30 L-30 30z' id='SvgjsPath1108'%3e%3c/path%3e%3c/defs%3e%3csymbol id='SvgjsSymbol1112'%3e%3cuse xlink:href='%23SvgjsPath1106' x='30' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='30' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='30' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='30' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='30' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='30' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='30' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='30' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='30' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='30' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='30' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='30' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='90' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='90' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='90' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='90' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='90' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='90' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='90' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='90' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='90' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='90' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='90' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='90' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='150' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='150' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='150' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='150' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='150' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='150' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='150' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='150' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='150' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='150' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='150' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='150' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='210' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='210' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='210' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='210' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='210' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='210' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='210' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='210' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='210' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='210' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='210' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='210' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='270' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='270' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='270' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='270' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='270' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='270' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='270' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='270' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='270' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='270' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='270' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='270' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='330' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='330' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='330' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='330' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='330' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='330' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='330' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='330' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='330' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='330' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='330' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='330' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='390' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='390' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='390' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='390' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='390' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='390' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='390' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='390' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='390' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='390' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='390' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='390' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='450' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='450' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='450' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='450' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='450' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='450' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='450' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='450' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='450' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='450' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='450' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='450' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='510' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='510' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='510' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='510' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='510' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='510' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='510' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='510' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='510' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='510' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='510' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='510' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='570' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='570' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='570' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='570' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='570' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='570' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='570' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='570' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1106' x='570' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='570' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='570' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='570' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='630' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='630' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='630' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='630' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='630' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='630' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='630' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='630' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='630' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='630' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='630' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='630' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='690' y='30' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='690' y='90' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1108' x='690' y='150' stroke='rgba(159%2c 144%2c 144%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='690' y='210' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='690' y='270' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='690' y='330' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='690' y='390' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1109' x='690' y='450' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='690' y='510' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1111' x='690' y='570' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1107' x='690' y='630' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1110' x='690' y='690' stroke='rgba(159%2c 144%2c 144%2c 1)'%3e%3c/use%3e%3c/symbol%3e%3c/svg%3e");
+    font-family: 'Literata', serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+/*El main contiene todos los contenedores*/
+main{
+    margin-top: -10px;
+    padding-bottom: 20px;
+    background-color:rgba(0, 0, 0, 0.781);
+    width: 92vw;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*Contenedor del título principal (h1)*/
+.titulo{
+    font-size: 1.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+h1{
+    font-family: 'Balsamiq Sans', cursive;
+    color:whitesmoke;
+    text-shadow: 0px 0px 10px #4A4AF7;
+    margin: 20px;
+    font-weight: 2em;
+    z-index: 5;
+}
+h2{
+    font-size: 1.5em;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 0px 0px 8px black;
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    z-index: 5;
+}
+h3{
+    font-size: 1.2em;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 0px 0px 8px black;
+    color: whitesmoke;
+    margin: 10px;
+    margin-top: 10px;
+    z-index: 5;
+}
+i{
+    transition: all 0.6s linear;
+    color: black;
+    font-size: 3.5em;
+    padding: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    z-index: 5;
+}
+hr{
+    text-shadow: 0px 0px 8px black;
+    display: flex;
+    flex-flow: row;
+    align-self: center;
+    transition: all 2s linear;
+    width: 0;
+    opacity:0%;
+    z-index: 5;
+}
+/*Este contenedor tiene los bloques grandes por parejas*/
+.contenedorPrincipalDoble{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1 0 70%;
+}
+/*Propiedad del contenedor de la imagen y la imagen misma*/
+.imagen{
+    position: relative;
+    display: flex;
+    align-self: center;
+    width: 50%;
+}
+img{
+    font-size: 8vw;
+    width: 100%;
+}
+/*Propiedades de la imagen de perfil de los perfiles grandes*/
+.imgPerfil{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-self: center;
+    transition: all 2s linear;
+    margin: 22px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 50%;
+    /*width: 230px;
+    height: 230px;*/
+    z-index: 5;
+}
+/*Propiedades de la imagen de perfil de los perfiles pequeños, solo cambia los tamaños*/
+.imgPerfilPequeño{
+    flex-flow: row;
+    align-self: center;
+    transition: all 2s linear;
+    margin: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    z-index: 5;
+}
+/*Propiedades del texto*/
+p{
+    transition: all 1s linear;
+    opacity: 0%;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 8px black;
+    transform:translateY(-30px);
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 37px;
+    padding-bottom: 50px;
+    z-index: -1;
+    overflow: hidden;
+}
+/*Contenedor de los iconos(Twitter, telegram..etc)*/
+.iconos{
+    padding-top: 2px;
+    width: 320px;
+    transition: all 1s linear;
+    transform:translateY(0px);
+    opacity: 0%;
+    overflow: hidden;
+    z-index: 5;
+}
+/*Esta clase contiene los tres primeros contendores o perfiles*/
+.Linea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*Fondo de los molletes*/
+.circulo1{
+    position: absolute;
+    transition: all 1s linear;
+    background-color: #dfdbe500;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23000000' fill-opacity='0.6' fill-rule='evenodd'/%3E%3C/svg%3E");
+    width: 100%;
+    height: 400px;
+    border-radius: 70%;
+    overflow: hidden;
+    z-index: 1;
+    top: -400px
+}
+.circulo2{
+    position: absolute;
+    transition: all 1s linear;
+    background-color: #dfdbe500;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23000000' fill-opacity='0.6' fill-rule='evenodd'/%3E%3C/svg%3E");
+    width: 100%;
+    height: 350px;
+    border-radius: 40%;
+    overflow: hidden;
+    z-index: 1;
+    top: -350px
+}
+/*Fondo de los perfiles*/
+.estilo1{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='980' height='600' preserveAspectRatio='none' viewBox='0 0 980 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1663%26quot%3b)' fill='none'%3e%3crect width='980' height='600' x='0' y='0' fill='rgba(34%2c 35%2c 159%2c 0.42)'%3e%3c/rect%3e%3cpath d='M29 600L629 0L1082 0L482 600z' fill='url(%23SvgjsLinearGradient1664)'%3e%3c/path%3e%3cpath d='M387.40000000000003 600L987.4000000000001 0L1180.9 0L580.9000000000001 600z' fill='url(%23SvgjsLinearGradient1664)'%3e%3c/path%3e%3cpath d='M965 600L365 0L123.5 0L723.5 600z' fill='url(%23SvgjsLinearGradient1665)'%3e%3c/path%3e%3cpath d='M652.5999999999999 600L52.59999999999991 0L-271.4000000000001 0L328.5999999999999 600z' fill='url(%23SvgjsLinearGradient1665)'%3e%3c/path%3e%3cpath d='M659.1694119876174 600L980 279.16941198761737L980 600z' fill='url(%23SvgjsLinearGradient1664)'%3e%3c/path%3e%3cpath d='M0 600L320.83058801238263 600L 0 279.16941198761737z' fill='url(%23SvgjsLinearGradient1665)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1663'%3e%3crect width='980' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1664'%3e%3cstop stop-color='rgba(121%2c 119%2c 175%2c 0.42)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(121%2c 119%2c 175%2c 0.42)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1665'%3e%3cstop stop-color='rgba(121%2c 119%2c 175%2c 0.42)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(121%2c 119%2c 175%2c 0.42)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+.estilo2{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1040' height='750' preserveAspectRatio='none' viewBox='0 0 1040 750'%3e%3cg mask='url(%26quot%3b%23SvgjsMask3190%26quot%3b)' fill='none'%3e%3crect width='1040' height='750' x='0' y='0' fill='rgba(182%2c 73%2c 242%2c 0.45)'%3e%3c/rect%3e%3cpath d='M54 750L804 0L1386 0L636 750z' fill='url(%23SvgjsLinearGradient3191)'%3e%3c/path%3e%3cpath d='M929 750L179 0L-428.5 0L321.5 750z' fill='url(%23SvgjsLinearGradient3192)'%3e%3c/path%3e%3cpath d='M344.59995909780173 750L1040 54.59995909780173L1040 750z' fill='url(%23SvgjsLinearGradient3191)'%3e%3c/path%3e%3cpath d='M0 750L695.4000409021983 750L 0 54.59995909780173z' fill='url(%23SvgjsLinearGradient3192)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask3190'%3e%3crect width='1040' height='750' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient3191'%3e%3cstop stop-color='rgba(152%2c 125%2c 167%2c 0.45)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(152%2c 125%2c 167%2c 0.45)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient3192'%3e%3cstop stop-color='rgba(152%2c 125%2c 167%2c 0.45)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(152%2c 125%2c 167%2c 0.45)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+.estilo3{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1040' height='750' preserveAspectRatio='none' viewBox='0 0 1040 750'%3e%3cg mask='url(%26quot%3b%23SvgjsMask3196%26quot%3b)' fill='none'%3e%3crect width='1040' height='750' x='0' y='0' fill='rgba(219%2c 77%2c 129%2c 0.42)'%3e%3c/rect%3e%3cpath d='M54 750L804 0L1386 0L636 750z' fill='url(%23SvgjsLinearGradient3197)'%3e%3c/path%3e%3cpath d='M929 750L179 0L-428.5 0L321.5 750z' fill='url(%23SvgjsLinearGradient3198)'%3e%3c/path%3e%3cpath d='M344.59995909780173 750L1040 54.59995909780173L1040 750z' fill='url(%23SvgjsLinearGradient3197)'%3e%3c/path%3e%3cpath d='M0 750L695.4000409021983 750L 0 54.59995909780173z' fill='url(%23SvgjsLinearGradient3198)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask3196'%3e%3crect width='1040' height='750' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient3197'%3e%3cstop stop-color='rgba(163%2c 113%2c 131%2c 0.42)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(163%2c 113%2c 131%2c 0.42)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient3198'%3e%3cstop stop-color='rgba(163%2c 113%2c 131%2c 0.42)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(163%2c 113%2c 131%2c 0.42)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+.estilo4{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='980' height='600' preserveAspectRatio='none' viewBox='0 0 980 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1069%26quot%3b)' fill='none'%3e%3crect width='980' height='600' x='0' y='0' fill='rgba(242%2c 118%2c 73%2c 0.47)'%3e%3c/rect%3e%3cpath d='M54 600L654 0L909 0L309 600z' fill='url(%23SvgjsLinearGradient1070)'%3e%3c/path%3e%3cpath d='M338.40000000000003 600L938.4000000000001 0L998.4000000000001 0L398.40000000000003 600z' fill='url(%23SvgjsLinearGradient1070)'%3e%3c/path%3e%3cpath d='M962 600L362 0L156.5 0L756.5 600z' fill='url(%23SvgjsLinearGradient1071)'%3e%3c/path%3e%3cpath d='M618.5999999999999 600L18.59999999999991 0L-405.9000000000001 0L194.0999999999999 600z' fill='url(%23SvgjsLinearGradient1071)'%3e%3c/path%3e%3cpath d='M606.7648943760015 600L980 226.7648943760015L980 600z' fill='url(%23SvgjsLinearGradient1070)'%3e%3c/path%3e%3cpath d='M0 600L373.2351056239985 600L 0 226.7648943760015z' fill='url(%23SvgjsLinearGradient1071)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1069'%3e%3crect width='980' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1070'%3e%3cstop stop-color='rgba(151%2c 118%2c 106%2c 0.47)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(151%2c 118%2c 106%2c 0.47)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1071'%3e%3cstop stop-color='rgba(151%2c 118%2c 106%2c 0.47)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(151%2c 118%2c 106%2c 0.47)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+/*Contendor de cada perfil*/
+.contenedorPerfil{
+    position: relative;
+    transition: all 1s linear;
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+/*Además de las propiedades del perfil, para los pequeños se añaden estas propiedades*/
+.pequeño {
+    width: 15vw;
+    min-width: 320px;
+    display: flex;
+    flex: 1 0 25%;
+}
+/*Contenedor del contendor de los iconos*/
+.redes{
+    transition: all 1s linear;
+    opacity: 0%;
+    transform: translatey(100px);
+    position: absolute;
+    bottom: 0%;
+    background-color: rgb(128, 128, 128);
+    width: 101%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+
+/*Todos los efectos del hr, imagen de perfil e iconos*/
+.contenedorPerfil:hover hr{
+    transition: all 1s linear;
+    width: 24vw;
+    color: white;
+    opacity: 100%;
+}
+.contenedorPerfil:hover .imgPerfil{
+    transition: all 1s linear;
+    border: 4px solid white;
+    box-shadow: 0px 0px 20px white;
+    z-index: 5;
+}
+.contenedorPerfil:hover .imgPerfilPequeño{
+    transition: all 1s linear;
+    border: 4px solid white;
+    box-shadow: 0px 0px 20px white;
+    z-index: 5;
+}
+.contenedorPerfil:hover .iconos{
+    transition: all 1s linear;
+    height: 70px;
+    opacity: 100%;
+}
+/*Colores de los iconos*/
+.estilo1 i:hover,.estilo2 i:hover,.estilo3 i:hover,.estilo4 i:hover{
+    transition: all 0.5s linear;
+    border-radius: 10px;
+    background-color: white;
+}
+/*Movimiento del texto y el contenedor de las redes*/
+.contenedorPerfil:hover p{
+    transition: all 1s linear;
+    opacity: 100%;
+    transform: translateY(0px);
+    z-index: 5;
+}
+.contenedorPerfil:hover .redes{
+    transition: all 1s linear;
+    transform: translatey(0px);
+    opacity: 100%;
+}
+/*Borde del perfil*/
+.contenedorPerfil:hover{
+    transition: all 1s linear;
+    border: 1px solid grey;
+}
+/*Animación del mollete*/
+.contenedorPerfil:hover .circulo1{
+    transition: all 1s linear;
+    position: absolute;
+    top: -190px;
+}
+.contenedorPerfil:hover .circulo2{
+    transition: all 1s linear;
+    position: absolute;
+    top: -150px;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .contenedorPerfil:hover {
+        position: relative;
+        transition: all 1s linear;
+        width: 78%;
+        border: 1px solid black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 48px;
+        margin-right: 48px;
+        overflow: hidden;
+    }
+    .contenedorPrincipalDoble{
+        flex-direction: column;
+    }
+    .pequeño {
+        width: 10vw;
+        min-width: 320px;
+        display: flex;
+        flex: 1 0 25%;
+    }
+    .contenedorPerfil{
+        width: 78%;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    hr{
+        text-shadow: 0px 0px 8px black;
+        display: flex;
+        flex-flow: row;
+        align-self: center;
+        transition: all 2s linear;
+        z-index: 5;
+        width: 24vw;
+        color: white;
+        opacity: 100%;
+    }
+    .imgPerfil{
+        border: 4px solid white;
+        box-shadow: 0px 0px 20px white;
+        z-index: 5;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        align-self: center;
+        transition: all 2s linear;
+        margin: 22px;
+        border-radius: 50%;
+        /*width: 230px;
+        height: 230px;*/
+        z-index: 5;
+    }
+    .imgPerfilPequeño{
+        border: 4px solid white;
+        box-shadow: 0px 0px 20px white;
+        z-index: 5;
+        flex-flow: row;
+        align-self: center;
+        transition: all 2s linear;
+        margin: 10px;
+        border-radius: 50%;
+        width: 210px;
+        height: 210px;
+        z-index: 5;
+    }
+    .iconos{
+        height: 70px;
+        opacity: 100%;
+        padding-top: 2px;
+        width: 320px;
+        z-index: 5;
+    }
+    .estilo1 i:hover,.estilo2 i:hover,.estilo3 i:hover,.estilo4 i:hover{
+        transition: all 0.5s linear;
+        color: black;
+        background-color: rgb(128, 128, 128);
+        font-size: 3.5em;
+        padding: 5px;
+        margin-left: 8px;
+        margin-right: 8px;
+        z-index: 5;
+    }
+    p{
+        transition: all 1s linear;
+        opacity: 100%;
+        transform: translateY(0px);
+        z-index: 1;
+    }
+    .contenedorPerfil:hover .redes{
+        transition: all 1s linear;
+        transform: translatey(0px);
+        opacity: 100%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgb(128, 128, 128);
+        width: 101%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-self: center;
+        flex-wrap: wrap;
+        z-index: 5;
+    }
+    .redes{
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+    .circulo1{
+        top: -190px;
+    }
+    .circulo2{
+        top: -150px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+
+    .contenedorPerfil:hover {
+        position: relative;
+        transition: all 1s linear;
+        width: 91%;
+        border: 1px solid black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: hidden;
+    }
+    .contenedorPrincipalDoble{
+        flex-direction: column;
+    }
+    .contenedorPerfil{
+        width: 91%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    hr{
+        text-shadow: 0px 0px 8px black;
+        display: flex;
+        flex-flow: row;
+        align-self: center;
+        transition: all 2s linear;
+        z-index: 5;
+        width: 24vw;
+        color: white;
+        opacity: 100%;
+    }
+    .imgPerfil{
+        border: 4px solid white;
+        box-shadow: 0px 0px 20px white;
+        z-index: 5;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        align-self: center;
+        transition: all 2s linear;
+        margin: 22px;
+        border-radius: 50%;
+        /*width: 230px;
+        height: 230px;*/
+        z-index: 5;
+    }
+    .imgPerfilPequeño{
+        border: 4px solid white;
+        box-shadow: 0px 0px 20px white;
+        z-index: 5;
+        flex-flow: row;
+        align-self: center;
+        transition: all 2s linear;
+        margin: 10px;
+        border-radius: 50%;
+        width: 210px;
+        height: 210px;
+        z-index: 5;
+    }
+    .iconos{
+        height: 70px;
+        opacity: 100%;
+        padding-top: 2px;
+        width: 320px;
+        z-index: 5;
+    }
+    .estilo1 i:hover,.estilo2 i:hover,.estilo3 i:hover,.estilo4 i:hover{
+        transition: all 0.5s linear;
+        color: black;
+        font-size: 3.5em;
+        padding: 5px;
+        margin-left: 8px;
+        margin-right: 8px;
+        z-index: 5;
+    }
+    i{
+        color: black;
+        font-size: 3.5em;
+        padding: 5px;
+        margin-left: 8px;
+        margin-right: 8px;
+        z-index: 5;
+    }
+    p{
+        transition: all 1s linear;
+        opacity: 100%;
+        transform: translateY(0px);
+        z-index: 1;
+    }
+    .contenedorPerfil:hover .redes{
+        transition: all 1s linear;
+        transform: translatey(0px);
+        opacity: 100%;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgb(128, 128, 128);
+        width: 101%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-self: center;
+        flex-wrap: wrap;
+        z-index: 5;
+    }
+    .redes{
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+    .circulo1{
+        top: -190px;
+    }
+    .circulo2{
+        top: -150px;
+    }
+}

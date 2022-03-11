@@ -1,0 +1,153 @@
+:root{
+    --colorprincipal: paleturquoise;
+}
+html{
+    background-color: var(--colorprincipal);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:out-of-range{
+    background-color: orangered;
+}
+
+input:invalid{
+    background-color: orangered;
+}
+
+input:valid{
+    background-color:lemonchiffon;
+}
+
+#DIW[type="checkbox"]:checked{
+    box-shadow: 3px 3px 5px orange;
+    
+}
+#DIW[type="checkbox"]:not(:checked){
+    box-shadow: 3px 3px 5px orange;
+}
+
+input[type="radio"]:hover{
+    box-shadow: 0px 0px 5px green;
+}
+
+input[type="radio"]:checked+label{
+    color: green;
+}
+
+input[type="radio"]:not(:checked)+label{
+    color: darkorchid;
+}
+
+#colorFav{
+    color: purple;
+}
+
+#colorFavorito{
+    color:darkorchid;
+    font-weight: bold;
+}
+
+
+input:required{
+    background-color: mistyrose;
+    font-style: italic;
+
+}
+
+#colorEdad{
+    color:darkorchid;
+    font-weight: bold;
+}
+
+#personales{
+
+    background-color: lavender;
+}
+
+#otros{
+
+    background-color: lavender;
+}
+
+h3{
+    color:purple;
+    font-style: italic;
+}
+
+legend{
+    color:royalblue;
+    font-weight: bold;
+}
+
+p{
+    color:green;
+}
+
+
+#nombre::placeholder{
+    color: mediumvioletred;
+    font-style: italic;
+}
+
+
+#nombre:hover{
+    border: 3px solid purple;
+}
+
+#apellido::placeholder{
+    color: mediumvioletred;
+    font-style: italic;
+}
+
+#apellido:hover{
+    border: 3px solid purple;
+
+}
+
+#boton{
+    text-align: center;
+}
+#enviar{
+    font-weight: bold;
+    color: blue;
+    padding: 10px;
+    background: lemonchiffon;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#reset{
+    padding: 10px;
+    background: lemonchiffon;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.clasColor{
+    background-color: peachpuff;
+    margin-right: 40%;
+}
+
+.intereses{
+    background-color: peachpuff;
+    margin-right: 40%;
+}
+.intereses > p{
+    font-style: italic;
+    margin: 0em;
+}
+
+#asignaturas{
+    margin: 0em;
+}
+
+#postal{
+    border: 3px solid rebeccapurple;
+}
+
+h1{
+    text-align: center;
+    color:royalblue;
+}
+body{
+    margin-left: 200px;
+    margin-right: 200px;
+}

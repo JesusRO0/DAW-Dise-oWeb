@@ -1,0 +1,82 @@
+html{
+    border: white 10px solid;
+    min-height: 97%;
+    min-height: 97%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    background: linear-gradient(to bottom, darkorange 0%, darkred 100%);
+    background-repeat: no-repeat;
+}
+header{
+    text-align: center;
+    color:darkred;
+    font-size: 2em;
+}
+h2{
+    text-align: center;
+    color: orange;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 1.7em;
+    padding-right: 5%;
+    padding-left: 5%;
+    transform: rotateZ(45deg);
+    transition: transform, 2s ease;
+    opacity: 0%;
+    color: yellow;
+
+}
+#bus{
+    padding-top: 3%;
+}
+
+p:hover{
+    transition: transform, 2s ease;
+    opacity: 100%;
+    color:white;
+    transform: rotateZ(0deg);
+    font-size: 2vw;
+}
+#vehiculos:hover{
+
+    background-color: purple;
+    transition: background-color 2s linear;
+}
+#vehiculos{
+    width:33.3%;
+    float: left;
+    margin: auto 20px;
+    height: 60vh;
+    border: white 5px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: white;
+    transition: background-color 2s linear;
+}
+i{
+    font-size: 15vw;
+    color: white;
+    transition: font-size 2s linear, color 2s linear;
+}
+
+i:hover {
+    color: darkorange;
+    transition: font-size 2s linear, color 2s linear;
+    font-size: 17vw;
+}
+footer{
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 0.1em;
+
+}

@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor{
+    background-color: darkgoldenrod;
+    margin: 10vh 5vw;
+    width: 90vw;
+    /*overflow: hidden;*/
+    /*height: 80vh;*/
+}
+/*Arreglar el problema de que no se vea el bloque dorado*/
+.contenedor::after{
+
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.caja1,.caja2,.caja3,.caja4{
+    border: 3px solid black;
+    margin: 10px;
+}
+
+p{
+    padding: 15px;
+}
+
+.caja1{
+    background-color: lightblue;
+    width: 50%;
+    height: 80%;
+    height: 500px;
+    float: left;
+}
+.caja2{
+    background-color: lightpink;
+    width: 20%;
+    height: 15%;
+    
+    float: left;
+}
+.caja3{
+    background-color: lightseagreen;
+    width: 20%;
+    height: 25%;
+    float: left;
+    clear: both;
+}
+.caja4{
+    background-color: khaki;
+    width: 15%;
+    height: 30%;
+    float: left;
+}
+/*
+.vacia{
+    clear: both;
+}*/

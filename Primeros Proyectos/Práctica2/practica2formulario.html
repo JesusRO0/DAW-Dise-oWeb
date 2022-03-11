@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="descripcion" content="Mi primer formulario HTML con diferentes tipos de entrada">
+        <meta name="author" content="Jesús Roca">
+        <meta name="keywords" content="html, HTML, diw, desarrollo de aplicaciones, desarrollo de aplicaciones web, formularios, html5, diseño de interfaces">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="lang" content="es-ES">
+        <title>Formulario de mi página web</title>
+    </head>
+    <body>
+        <main name="contenido">
+            <form name="miformulario" method="post" action="practica2php.php">
+                <h1>Introduzca datos</h1>
+                <fieldset>
+                <legend>Datos personales</legend>
+                <p>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" size="15" maxlength="20" required placeholder="JohnCarter35">
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" size="15" maxlength="8" required placeholder="Password">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" size="40" maxlength="50" required placeholder="JohnCarter35@gmail.com">
+                </p>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" size="15" maxlength="20" placeholder="First Name">
+                </p>
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" size="30" maxlength="40" placeholder="Last Name">
+                </p>
+                <p>
+                    <label for="date">Date of Birthday:</label>
+                    <input type="date" name="date" id="date">
+                </p>
+                <p>
+                <fieldset>
+                    <legend>Favorite music</legend>
+                    <label for="favorite">Type of Music: </label><br>
+                    <p>
+                        <label for="typemusic">Classic</label>
+                        <input type="checkbox" name="Classic" id="Classic" value="a">
+                        <label for="typemusic">Jazz</label>
+                        <input type="checkbox" name="Jazz" id="Jazz" value="b" >
+                        <label for="typemusic">Pop</label>
+                        <input type="checkbox" name="Pop" id="Pop" value="c">
+                        <label for="typemusic">Soul</label>
+                        <input type="checkbox" name="Soul" id="Soul" value="d">
+                        <label for="typemusic">Funk</label>
+                        <input type="checkbox" name="Funk" id="Funk" value="e" >
+                        <label for="typemusic">Blues</label>
+                        <input type="checkbox" name="Blues" id="Blues" value="d">
+                        <label for="typemusic">Metal</label>
+                        <input type="checkbox" name="Metal" id="Metal" value="f" >
+                        <label for="typemusic">Rock</label>
+                        <input type="checkbox" name="Rock" id="Rock" value="g">
+                        <label for="typemusic">Punk</label>
+                        <input type="checkbox" name="Punk" id="Punk" value="h">
+                        <label for="typemusic">Other</label>
+                        <input type="checkbox" name="Other" id="Other" value="i" checked>
+                    </p>
+                </p>
+                    <p>
+                        <label for="comentario">Favorite Albums: </label><br>
+                        <textarea name="comentario" id="comentario" rows="5" cols="60" spellcheck="true"></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Other information:</legend>
+                    <p>
+                        <label for="social">Social network</label>
+                        <input type="text" name="social" id="social" size="50" placeholder="Twitter, facebook, Instagram...">
+                    </p>
+                    <p>
+                        <label for="tlf">Número de teléfono</label>
+                        <input type="tel" name="tlf" id="tlf" size="15">
+                    </p>
+                    <p>
+                        <label for="gender">Gender type</label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other" selected>other</option>
+                        </select>
+                    </p>
+                </fieldset>
+                    <p>
+                        <input type="checkbox" name="term" id="term" value="a" required>
+                        <label for="term">Accept Terms and Conditions</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="promotional" id="promotional" value="b" >
+                        <label for="term">Receive promotional mailings</label>
+                    </p>
+                <p>
+                    <input id="enviar" type="submit" value="Enviar formulario">
+                    <input id="reset" type="reset" value="Reiniciar formulario">
+                </p>
+            </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
